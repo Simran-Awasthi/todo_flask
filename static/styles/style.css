@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.image-header {
+    position: fixed;
+    top: 0;
+    height: 300px;
+    width: auto;
+    z-index: -1;
+}
+
+.image-header img {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.black-box {
+    background: linear-gradient(rgba(255, 192, 255, 0.5), rgba(0, 0, 255, 0.5));
+    position: fixed;
+    top: 0;
+    height: 300px;
+    width: 100%;
+}
+
+
+.container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form input{
+    background-color: white;
+    height: 20px;
+    padding: 20px;
+    padding-left: 30px;
+    width: 300px;
+    border: none;
+    border-radius: 4px;
+    margin: none;
+    font-family: 'Josefin Sans', sans-serif;
+    outline: none;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+input:focus {
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    outline: none;
+}
+
+.todo_box {
+    background-color: white;
+    height: auto;
+    padding: 20px;
+    padding-right: 30px;
+    width: 300px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3), 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.todo_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.check_icon a {
+    color: white;
+}
+.check_icon i {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.check_icon {
+    margin: 5px;
+    margin-right: 20px;
+    border-radius: 500px;
+    background: linear-gradient(rgb(250, 192, 255), blue);
+}
+.not_check_icon {
+    margin: 5px;
+    margin-right: 20px;
+    border-radius: 500px;
+    border: 3px solid  blue;
+    width: 18px;
+    height: 18px;
+}
+
+.close-btn i{
+    font-size: 20px;
+    color: rgb(44, 44, 253);
+    transition: all 200ms ease-in-out;
+}
+
+.close-btn:hover i{
+    transform: scale(1.25);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: min-content;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.time_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time_box h1 {
+    margin: 10px 0px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.time_box span {
+    font-size: 12px;
+}
+
+.done {
+    text-decoration: line-through;
+}
